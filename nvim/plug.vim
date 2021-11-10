@@ -14,8 +14,10 @@ if has("nvim")
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'hoob3rt/lualine.nvim'
+    Plug 'rmehri01/onenord.nvim', { 'branch': 'main' }
 endif
 
+Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
 
 call plug#end()

@@ -48,3 +48,7 @@ nmap <A-J> <esc>:resize -1<cr>
 
 runtime ./plug.vim
 
+" theme
+colorscheme nord
+" colorscheme onenord
+
