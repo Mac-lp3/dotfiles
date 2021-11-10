@@ -8,3 +8,16 @@
 # same with nvim
 # same with .zshrc
 # set up script (download dir colors, etc)
+
+BASEDIR=$(dirname "$0")
+
+# zsh stuff
+rm -rf $BASEDIR/zsh/oh-my-zsh/custom/*
+cp -a ~/.oh-my-zsh/custom/. $BASEDIR/zsh/oh-my-zsh/custom/
+cp ~/.zshrc $BASEDIR/zsh/.zshrc
+
+# neovim
+rm -rf $BASEDIR/nvim/*
+cp -a ~/.config/nvim/. $BASEDIR/nvim/
+
+

@@ -9,6 +9,8 @@
 ### shell
 
 * oh-my-zsh
+* py-env
+* nvm
 
 ### neovim
 
