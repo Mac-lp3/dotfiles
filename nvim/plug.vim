@@ -2,7 +2,7 @@ let g:plug_home = stdpath('data') . '/plugged'
 
 call plug#begin()
 
-if has("nvim")
+if has('nvim')
     Plug 'neovim/nvim-lspconfig'
     Plug 'glepnir/lspsaga.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -15,6 +15,7 @@ if has("nvim")
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'hoob3rt/lualine.nvim'
     Plug 'rmehri01/onenord.nvim', { 'branch': 'main' }
+    Plug 'folke/zen-mode.nvim'
 endif
 
 Plug 'arcticicestudio/nord-vim'

@@ -5,6 +5,9 @@ set number relativenumber
 set list
 set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<
 
+" When the page starts to scroll
+set scrolloff=4
+
 " Shortcuts
 
 " space = leader
