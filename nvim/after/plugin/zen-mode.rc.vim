@@ -6,6 +6,5 @@ lua << EOF
   }
 EOF
 
-nnoremap <C-z> :ZenMode<cr>
-inoremap <C-z> :ZenMode<cr>
+nnoremap <Leader>z :ZenMode<cr>
 

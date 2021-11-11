@@ -9,7 +9,6 @@ lua << EOF
 local coq = require'coq'
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
-
 local on_attach = function(client, bufnr)
   protocol.CompletionItemKind = {
     '', -- Text
@@ -44,10 +43,13 @@ nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
 }
+nvim_lsp.tsserver.setup(coq.lsp_ensure_capabilities())
 
 nvim_lsp.terraformls.setup {
   on_attach = on_attach
 }
+nvim_lsp.terraformls.setup(coq.lsp_ensure_capabilities())
 
 EOF
+
 

@@ -49,9 +49,13 @@ nmap <A-L> <esc>:vertical resize +1<cr>
 nmap <A-K> <esc>:resize +1<cr>
 nmap <A-J> <esc>:resize -1<cr>
 
+" Plugin settings
+let g:coq_settings = { 'auto_start': 'shut-up', 'xdg': v:true }
+
 runtime ./plug.vim
 
-" theme
+" theme options:
+" nord
+" onenord
 colorscheme nord
-" colorscheme onenord
 
