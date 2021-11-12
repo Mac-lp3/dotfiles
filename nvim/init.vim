@@ -26,7 +26,7 @@ nnoremap <Leader>c "_c
 nnoremap x "_x
 
 " ctrl backspace/del to delete words
-inoremap  <esc>"_cb
+inoremap  <esc>l"_cb
 inoremap <C-Del> <esc>"_cw
 
 " press enter after a search to clear highlights
@@ -50,7 +50,7 @@ nmap <A-K> <esc>:resize +1<cr>
 nmap <A-J> <esc>:resize -1<cr>
 
 " Plugin settings
-let g:coq_settings = { 'auto_start': 'shut-up', 'xdg': v:true }
+let g:coq_settings = { 'auto_start': 'shut-up', 'xdg': v:true, 'keymap.jump_to_mark' : '' }
 
 runtime ./plug.vim
 
