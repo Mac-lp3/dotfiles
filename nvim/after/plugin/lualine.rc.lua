@@ -1,4 +1,4 @@
-local status, lualine = pcall(require, "lualine")
+local status, lualine = pcall(require, 'lualine')
 if (not status) then return end
 
 lualine.setup {
@@ -12,9 +12,11 @@ lualine.setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
-    lualine_c = {'filename'},
+    lualine_c = { 
+        { 'filename', path = 1 }
+    },
     lualine_x = {
-      { 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} },
+      { 'diagnostics', sources = {'nvim_lsp'}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} },
       'encoding',
       'filetype'
     },
