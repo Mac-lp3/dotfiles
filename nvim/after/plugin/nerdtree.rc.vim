@@ -1,3 +1,4 @@
+let NERDTreeShowHidden=1
 let g:NERDTreeWinPos = "left"
 nmap <C-n> :NERDTreeToggle<CR>
 

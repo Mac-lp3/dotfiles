@@ -99,7 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tree="tree --dirsfirst -I 'node_modules'"
+# alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+alias tree="tree -a --dirsfirst -I 'node_modules'"
 alias vim=nvim
 
 # pyenv config
