@@ -3,7 +3,7 @@ set number relativenumber
 
 " whitespace characters
 set list
-set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<
+set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<,space:·
 
 " When the page starts to scroll
 set scrolloff=4
