@@ -1,6 +1,9 @@
 " line numbers
 set number relativenumber
 
+" ignore case when searching
+set ignorecase
+
 " whitespace characters
 set list
 set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<,space:·
@@ -8,7 +11,19 @@ set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<,space:·
 " When the page starts to scroll
 set scrolloff=4
 
-" Shortcuts
+" filetype/indent settings
+filetype plugin indent on
+set autoindent
+set smartindent
+set nowrap
+set expandtab " default to spaces not tabs
+set shiftwidth=4 " use 4 spaces for a tab
+set tabstop=4
+
+" always tabs for makefiles
+autocmd FileType make setlocal shiftwidth=8 tabstop=8 noexpandtab
+
+" Mappings
 
 " space = leader
 nnoremap <SPACE> <Nop>
@@ -19,6 +34,9 @@ nnoremap <C-a> ggVG
 
 " leader p to paste from yank registry
 nnoremap <leader>p "0p
+
+" ctrl+c to copy to system clipboard
+nnoremap <C-c> "*y
 
 " black hole registry
 nnoremap <Leader>d "_d
@@ -31,6 +49,10 @@ inoremap <C-Del> <esc>"_cw
 
 " press enter after a search to clear highlights
 nnoremap <CR> :noh<CR><CR>
+
+" alt+[/] for prev/next buffer
+nnoremap <M-[> :bp<cr>
+nnoremap <M-]> :bn<cr>
 
 " windows & movement
 " alt-direction to change window
