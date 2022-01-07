@@ -3,7 +3,7 @@ set number relativenumber
 
 " ignore case when searching
 set ignorecase
-
+"
 " whitespace characters
 set list
 set listchars=eol:⏎,tab:>-,trail:·,extends:>,precedes:<,space:·
@@ -80,4 +80,10 @@ runtime ./plug.vim
 " nord
 " onenord
 colorscheme nord
+
+if exists('+termguicolors')
+    let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
 
