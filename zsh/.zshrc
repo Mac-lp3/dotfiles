@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias tmux="tmux -f ~/.config/tmux/tmux.conf"
-alias tree="tree -a --dirsfirst -I 'node_modules'"
+alias tree="tree -a --dirsfirst -I 'node_modules|.git'"
 alias vim=nvim
 
 # pyenv config
