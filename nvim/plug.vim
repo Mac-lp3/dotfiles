@@ -16,6 +16,8 @@ if has('nvim')
     Plug 'hoob3rt/lualine.nvim'
     Plug 'rmehri01/onenord.nvim', { 'branch': 'main' }
     Plug 'folke/zen-mode.nvim'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    Plug 'nanotee/sqls.nvim'
 endif
 
 Plug 'arcticicestudio/nord-vim'

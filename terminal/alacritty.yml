@@ -865,12 +865,26 @@ font:
     family: Hack NF
   bold_italic:
     family: Hack NF
+  
+debug:
+  print_events: true
 
 key_bindings:
   - { key: V, mods: Control, action: Paste }
   - { key: C, mods: Control, action: Copy }
-#  - { key: Tab, mods: Control, chars: "\x01n" }
-#  - { key: Tab, mods: Control, chars: "\x01n" }
+  - { key: Key1, mods: Control, chars: "\u001b[27;5;49~" }
+  - { key: Key2, mods: Control, chars: "\u001b[a" }
+  # - { key: 2, mods: Control, chars: "^[[27;5;50~" }
+  # - { key: 3, mods: Control, chars: "^[[27;5;51~" }
+  # - { key: 4, mods: Control, chars: "^[[27;5;52~" }
+  # - { key: 5, mods: Control, chars: "^[[27;5;53~" }
+  # - { key: 6, mods: Control, chars: "^[[27;5;54~" }
+  # - { key: 7, mods: Control, chars: "^[[27;5;55~" }
+  # - { key: 8, mods: Control, chars: "^[[27;5;56~" }
+  # - { key: 9, mods: Control, chars: "^[[27;5;57~" }
+  # - { key: 0, mods: Control, chars: "^[[27;5;48~" }
+  # - { key: Tab, mods: Control, chars: "\x01n" }
+  # - { key: Tab, mods: Control, chars: "\x01n" }
 
 # THEMES
 #nord

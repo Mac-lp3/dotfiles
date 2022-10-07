@@ -102,11 +102,15 @@ source $ZSH/oh-my-zsh.sh
 # alias tmux="tmux -f ~/.config/tmux/tmux.conf"
 alias tree="tree -a --dirsfirst -I 'node_modules|.git'"
 alias vim=nvim
+alias kctl=kubectl
+
+# for quick access
+export VIMRC=~/.config/nvim/init.vim
 
 # pyenv config
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="/home/staticlp3/.pyenv/shims:${PATH}"
+export PATH="$PYENV_ROOT/shims:${PATH}"
 export PYENV_SHELL=zsh
 source '/home/staticlp3/.pyenv/libexec/../completions/pyenv.zsh'
 command pyenv rehash 2>/dev/null
@@ -126,6 +130,10 @@ pyenv() {
     ;;
   esac
 }
+
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # nvm config
 export NVM_DIR=~/.nvm

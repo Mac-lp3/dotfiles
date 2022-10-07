@@ -1,3 +1,6 @@
+" for WSL clipboard support
+set clipboard=unnamedplus
+
 " line numbers
 set number relativenumber
 
@@ -33,15 +36,20 @@ let mapleader=" "
 nnoremap <C-a> ggVG
 
 " leader p to paste from yank registry
-nnoremap <leader>p "0p
+nnoremap <Leader>p "0p
 
 " ctrl+c to copy to system clipboard
 nnoremap <C-c> "*y
 
-" black hole registry
+" leader c, d, and x sends to black hole registry
 nnoremap <Leader>d "_d
+nnoremap <Leader>D "_D
 nnoremap <Leader>c "_c
+nnoremap <Leader>C "_C
 nnoremap x "_x
+
+" leader bd - moves to next buffer and deletes the one you were just on
+nnoremap <Leader>bd <esc>:bn<CR><esc>:bd#<CR>
 
 " ctrl backspace/del to delete words
 inoremap  <esc>l"_cb
