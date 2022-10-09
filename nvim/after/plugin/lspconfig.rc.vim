@@ -2,6 +2,8 @@ if !exists('g:lspconfig')
   finish
 endif
 
+let g:coq_settings = { 'auto_start': v:true }
+
 lua << EOF
 
 vim.lsp.set_log_level('debug')
